@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header id="cabecalho-principal">
+        <h1 id="titulo-pagina">Biblioteca Virtual</h1>
+        <nav id="navegacao-principal">
+            <a href="#secao-acervo">Catálogo de Livros</a>
+            <a href="#secao-sugestao">Sugerir Aquisição</a>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+
+        <section id="secao-acervo" class="cartao-conteudo">
+            <h2 class="titulo-secao">Nosso Acervo</h2>
+            <hr class="linha-divisoria">
+
+            <div class="campo-grupo">
+                <label for="pesquisa-livro">Pesquisar livro:</label>
+                <input type="text" id="pesquisa-livro" class="campo-texto" placeholder="Digite o título...">
+            </div>
+
+            <div class="grade-livros">
+                <div class="cartao-livro">O Senhor dos Anéis</div>
+                <div class="cartao-livro">1984</div>
+                <div class="cartao-livro">Dom Casmurro</div>
+                <div class="cartao-livro">Fundação</div>
+                <div class="cartao-livro">O Pequeno Príncipe</div>
+                <div class="cartao-livro">Fahrenheit 451</div>
+            </div>
+        </section>
+
+        <section id="secao-sugestao" class="cartao-conteudo">
+            <h2 class="titulo-secao">Sugerir Novo Livro</h2>
+            <hr class="linha-divisoria">
+
+            <form id="formulario-sugestao">
+                <div class="campo-grupo">
+                    <label for="nome-usuario">Seu Nome</label>
+                    <input type="text" id="nome-usuario" class="campo-texto">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="titulo-obra">Título da Obra</label>
+                    <input type="text" id="titulo-obra" class="campo-texto">
+                    <p class="mensagem-erro" class="mensagem-sucesso" id="mensagem-erro-titulo">
+                        
+                    </p>
+                </div>
+
+                <button type=" submit" id="botao-enviar">Enviar Sugestão</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="rodape-principal">
+        <p>Desenvolvimento Web - Biblioteca Virtual</p>
+        <a href="#cabecalho-principal" id="link-voltar-topo">Voltar ao topo</a>
+    </footer>
+
+</body>
+
+</html>

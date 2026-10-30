@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f5f8;
+  color: #333;
+}
+
+#cabecalho-principal {
+  background-color: #334152;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+
+#titulo-pagina {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#navegacao-principal a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 0.95rem;
+}
+
+#navegacao-principal a:hover {
+  text-decoration: underline;
+}
+
+#conteudo-principal {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cartao-conteudo {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.titulo-secao {
+  color: #334152;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.linha-divisoria {
+  border: none;
+  border-top: 2px solid #e09351;
+  margin-bottom: 25px;
+}
+
+.campo-grupo {
+  margin-bottom: 20px;
+}
+
+.campo-grupo label {
+  display: block;
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.campo-texto {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.campo-texto:focus {
+  border-color: #334152;
+}
+
+.campo-texto::placeholder {
+  color: #a0aec0;
+}
+
+
+.grade-livros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.cartao-livro {
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 25px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #2d3748;
+}
+
+
+#botao-enviar {
+  width: 100%;
+  background-color: #d98236;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+#botao-enviar:hover {
+  background-color: #c4732b;
+}
+
+
+#rodape-principal {
+  background-color: #334152;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.85rem;
+}
+
+#rodape-principal p {
+  margin-bottom: 12px;
+}
+
+#link-voltar-topo {
+  color: #e09351;
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
+
+#link-voltar-topo:hover {
+  color: #f6ad55;
+}
+
+@media (max-width: 768px) {
+  .grade-livros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grade-livros {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mensagem-erro {
+  color: #e53e3e;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.mensagem-sucesso {
+  color: #38a169;
+  font-weight: bold;
+  margin-top: 10px;
+}
